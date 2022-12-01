@@ -25,7 +25,7 @@ function renderCalender(){
    console.log(lastdateofmonth);
    var litag="";
    for(let i=1;i<=lastdateofmonth;i++){
-      litag+=`<li class="chg" id="">${i}</li>`;
+      litag+=`<li class="chg" id="white">${i}</li>`;
    }
    day.innerHTML=litag;
 
@@ -40,7 +40,7 @@ btn.addEventListener('click',(e)=>{
         console.log(dta.innerHTML)
         if(date==dta.innerHTML){
 
-            if(dta.id=="white" || dta.id=="")
+            if(dta.id=="white")
               dta.setAttribute("id","green");
             else
              dta.setAttribute("id","white");
