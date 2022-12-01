@@ -25,7 +25,7 @@ function renderCalender(){
    console.log(lastdateofmonth);
    var litag="";
    for(let i=1;i<=lastdateofmonth;i++){
-      litag+=`<li class="chg" id="white">${i}</li>`;
+      litag+=`<li class="chg" id="">${i}</li>`;
    }
    day.innerHTML=litag;
 
